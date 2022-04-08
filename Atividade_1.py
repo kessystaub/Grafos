@@ -7,8 +7,7 @@ app = App()
 
 # app.user_graph_config()
 # app.build_graph_input()
-7
-7
+
 # ===========================================
 # AUTOMÁTICO:
 
@@ -93,35 +92,35 @@ app = App()
 # )
 
 
-# DESCONEXO COM 3 SUB-GRAFOS TALVEZ COM ERRO
-# app.build_graph_auto(
-#     all_connections=[
-#         'd,b',
-#         'c',
-#         'g',
-#         'e,f',
-#         'a,g,c,b',
-#         'c',
-#         'f,b',
-#         'f,j',
-#         'k,c',
-#         'i,d'
-#     ],
-#     is_directed=True,
-#     vertexes=['a', 'b', 'c', 'd', 'e', 'f','g','i','j','k']
-# )
-
-# CONEXO
+#DESCONEXO COM 3 SUB-GRAFOS
 app.build_graph_auto(
     all_connections=[
+        'd,b',
         'c',
         'g',
-        'f,b',
+        'e,f',
+        'a,g,c,b',
         'c',
+        'f,b',
+        'f,j',
+        'k,c',
+        'i,d'
     ],
     is_directed=True,
-    vertexes=['b', 'c', 'g','f']
+    vertexes=['a', 'b', 'c', 'd', 'e', 'f','g','i','j','k']
 )
+
+# CONEXO
+# app.build_graph_auto(
+#     all_connections=[
+#         'c',
+#         'g',
+#         'f,b',
+#         'c',
+#     ],
+#     is_directed=True,
+#     vertexes=['b', 'c', 'g','f']
+# )
 
 
 # ===========================================

@@ -305,19 +305,6 @@ class Graph():
                     graph_copy = self.remove_vertex_copy(graph_copy, item)
                     
                 count += 1
-        
-
-
-
-
-
-
-
-
-
-
-    
-        
 
     def generate_matrix(self):
         # Zera a matriz
